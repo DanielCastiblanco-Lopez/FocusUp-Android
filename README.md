@@ -40,12 +40,12 @@ git clone https://github.com/DanielCastiblanco-Lopez/FocusUp-Android.git
 4. Ejecutar la aplicación en un dispositivo Android o emulador.
 
 
-##🎯 Objetivo del proyecto
+## 🎯 Objetivo del proyecto
 
 FocusUp nace como un proyecto de desarrollo de software enfocado en aplicar buenas prácticas de programación, diseño de interfaces móviles y construcción de una solución orientada a la productividad personal.
 
 
-##👨‍💻 Autor
+## 👨‍💻 Autor
 
 Daniel López
 
