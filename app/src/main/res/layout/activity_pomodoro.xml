@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F1"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPomodoro"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#2C3E50"
+        android:paddingTop="6dp"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationContentDescription="Volver"
+        app:title="Temporizador Pomodoro"
+        app:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Etiqueta de estado -->
+            <TextView
+                android:id="@+id/tvSessionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/bg_status_chip"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="Listo para empezar"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="28dp"
+                android:text="Sesion de estudio"
+                android:textColor="#2C3E50"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Anillo de progreso circular con el tiempo en el centro -->
+            <FrameLayout
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_marginBottom="32dp">
+
+                <com.example.focusup.CircularProgressView
+                    android:id="@+id/progressTimer"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTimerCenter"
+                    android:layout_width="208dp"
+                    android:layout_height="208dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#2C3E50"
+                    app:cardCornerRadius="104dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTimer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="25:00"
+                            android:textColor="#18BC9C"
+                            android:textSize="40sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Tarea asociada"
+                app:boxStrokeColor="#18BC9C"
+                app:hintTextColor="#2C3E50"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:inputType="none"
+                    android:textColor="#2C3E50" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Boton principal grande -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                android:text="Iniciar sesion"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#18BC9C"
+                app:cornerRadius="14dp"
+                app:icon="@android:drawable/ic_media_play"
+                app:iconGravity="textStart" />
+
+            <!-- Botones secundarios mas discretos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPause"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="Pausar"
+                    android:textColor="#2C3E50"
+                    android:textSize="13sp"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="14dp"
+                    app:strokeColor="#D5DBDB"
+                    app:strokeWidth="1dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnReset"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:text="Reiniciar"
+                    android:textColor="#2C3E50"
+                    android:textSize="13sp"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="14dp"
+                    app:strokeColor="#D5DBDB"
+                    app:strokeWidth="1dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Ultimas sesiones"
+                android:textColor="#2C3E50"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!-- Contenedor dinamico de sesiones recientes -->
+            <LinearLayout
+                android:id="@+id/containerRecentSessionsPomodoro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tvNoSessionsPomodoro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Aun no has completado ninguna sesion"
+                android:textColor="#7F8C8D"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_nav"
+        app:itemIconTint="@drawable/bottom_nav_color"
+        app:itemTextColor="@drawable/bottom_nav_color"
+        app:itemActiveIndicatorStyle="@style/NavIndicatorTransparent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

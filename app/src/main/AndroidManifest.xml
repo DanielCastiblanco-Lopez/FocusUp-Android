@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FocusUp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FocusUp">
+
+        <!-- Resumen total de estadisticas -->
+        <activity
+            android:name=".FullSummaryActivity"
+            android:exported="false" />
+
+        <!-- MainActivity: punto de entrada, redirige al Login -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Inicio (Home) -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- Registro -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- Dashboard -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <!-- Pomodoro -->
+        <activity
+            android:name=".PomodoroActivity"
+            android:exported="false" />
+
+        <!-- Estadísticas -->
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false" />
+
+        <!-- Perfil -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

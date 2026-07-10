@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Archivo: res/drawable/bottom_nav_color.xml -->
+<!-- Selector de color para íconos y texto del BottomNavigationView -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Color cuando el ítem está seleccionado (activo) -->
+    <item
+        android:color="#18BC9C"
+        android:state_checked="true" />
+
+    <!-- Color cuando el ítem NO está seleccionado -->
+    <item android:color="#7F8C8D" />
+
+</selector>

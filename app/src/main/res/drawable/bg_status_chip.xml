@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Archivo: res/drawable/bg_status_chip.xml -->
+<!-- Fondo redondeado para la etiqueta de estado de la sesion Pomodoro -->
+<!-- El color se cambia desde el codigo segun el estado (listo / corriendo / pausado) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#7F8C8D" />
+
+    <corners android:radius="20dp" />
+
+</shape>

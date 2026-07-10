@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Archivo: res/drawable/progress_circle_pomodoro.xml -->
+<!-- Anillo de progreso circular: fondo gris claro + progreso turquesa -->
+<!-- La rotacion -90 ya se aplica en el ProgressBar via android:rotation, asi que aqui no rotamos de nuevo -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape android:shape="ring"
+            android:innerRadiusRatio="3.2"
+            android:thickness="14dp"
+            android:useLevel="false">
+            <solid android:color="#D5DBDB" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <shape android:shape="ring"
+            android:innerRadiusRatio="3.2"
+            android:thickness="14dp"
+            android:useLevel="true">
+            <solid android:color="#18BC9C" />
+        </shape>
+    </item>
+
+</layer-list>

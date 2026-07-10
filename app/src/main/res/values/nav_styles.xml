@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- Quita la capsula de fondo morada detras del icono activo en el BottomNavigationView -->
+<style name="NavIndicatorTransparent" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+    <item name="android:color">@android:color/transparent</item>
+</style>
+
+</resources>

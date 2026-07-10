@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores institucionales originales -->
+    <color name="primary">#18BC9C</color>
+    <color name="primary_dark">#2C3E50</color>
+    <color name="background">#ECF0F1</color>
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+
+    <!-- Prioridades de tareas -->
+    <color name="priority_high">#E74C3C</color>
+    <color name="priority_medium">#F39C12</color>
+    <color name="priority_low">#27AE60</color>
+
+    <!-- NUEVOS: tonos intermedios para dar mas profundidad visual -->
+    <color name="primary_light">#4FD8BC</color>      <!-- turquesa mas claro, para fondos suaves -->
+    <color name="primary_dark_variant">#1F2D3A</color> <!-- azul aun mas oscuro, para contrastes -->
+    <color name="surface_variant">#F4F6F7</color>      <!-- gris muy claro, para fondos de items dentro de tarjetas -->
+    <color name="divider_soft">#E8ECEF</color>          <!-- lineas divisorias sutiles -->
+    <color name="text_tertiary">#A6B1B9</color>         <!-- texto aun mas apagado -->
+
+    <!-- Extras de apoyo -->
+    <color name="surface">#FFFFFF</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>
