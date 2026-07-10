@@ -31,8 +31,7 @@ El objetivo principal de la aplicación es ayudar a los usuarios a organizar sus
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/DanielCastiblanco-Lopez/FocusUp-Android.git
-´´´
+git clone https://github.com/DanielCastiblanco-Lopez/FocusUp-Android.git ```
 
 
 2. Abrir el proyecto en Android Studio.
