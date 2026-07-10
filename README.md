@@ -47,6 +47,6 @@ FocusUp nace como un proyecto de desarrollo de software enfocado en aplicar buen
 
 ## 👨‍💻 Autor
 
-Daniel López
+Faiber Daniel Castiblanco López
 
 Proyecto desarrollado como parte del proceso de formación en Análisis y Desarrollo de Software.
