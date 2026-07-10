@@ -32,6 +32,7 @@ El objetivo principal de la aplicación es ayudar a los usuarios a organizar sus
 
 ```bash
 git clone https://github.com/DanielCastiblanco-Lopez/FocusUp-Android.git
+```
 
 2. Abrir el proyecto en Android Studio.
 3. Esperar la sincronización de Gradle.
