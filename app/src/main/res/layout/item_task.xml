@@ -10,6 +10,8 @@
     android:foreground="?attr/selectableItemBackground"
     app:cardBackgroundColor="#FFFFFF"
     app:cardCornerRadius="16dp"
+    android:outlineProvider="background"
+    android:clipToOutline="true"
     app:cardElevation="3dp"
     app:strokeColor="#E8ECEF"
     app:strokeWidth="1dp">

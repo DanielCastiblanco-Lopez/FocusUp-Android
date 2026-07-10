@@ -20,8 +20,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbarProfile)
-        setSupportActionBar(toolbar)
+
 
         val btnEditProfile = findViewById<android.widget.LinearLayout>(R.id.btnEditProfile)
         btnEditProfile.setOnClickListener {

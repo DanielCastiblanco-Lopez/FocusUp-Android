@@ -7,16 +7,7 @@
     android:background="#ECF0F1"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarStats"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="#2C3E50"
-        android:paddingTop="6dp"
-        app:navigationIcon="@drawable/ic_back"
-        app:navigationContentDescription="Volver"
-        app:title="Estadisticas"
-        app:titleTextColor="#FFFFFF" />
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +18,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Estadísticas"
+                android:textColor="#2C3E50"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins" />
 
             <!-- Selector de periodo -->
 
@@ -106,7 +108,9 @@
                     android:layout_weight="1"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp">
+                    android:outlineProvider="background"
+    android:clipToOutline="true"
+    app:cardElevation="4dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -149,7 +153,9 @@
                     android:layout_weight="1"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp">
+                    android:outlineProvider="background"
+    android:clipToOutline="true"
+    app:cardElevation="4dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -191,7 +197,9 @@
                     android:layout_weight="1"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp">
+                    android:outlineProvider="background"
+    android:clipToOutline="true"
+    app:cardElevation="4dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -237,7 +245,9 @@
                 android:layout_marginBottom="20dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
+                android:outlineProvider="background"
+    android:clipToOutline="true"
+    app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -283,7 +293,9 @@
                 android:visibility="gone"
                 app:cardBackgroundColor="#2C3E50"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
+                android:outlineProvider="background"
+    android:clipToOutline="true"
+    app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -370,6 +382,8 @@
         app:itemIconTint="@drawable/bottom_nav_color"
         app:itemTextColor="@drawable/bottom_nav_color"
         app:itemActiveIndicatorStyle="@style/NavIndicatorTransparent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="26dp"
         app:menu="@menu/bottom_nav_menu" />
 
 </LinearLayout>

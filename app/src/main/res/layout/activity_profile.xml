@@ -7,15 +7,7 @@
     android:background="#ECF0F1"
     android:orientation="vertical">
 
-    <!-- Toolbar -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarProfile"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#FFFFFF"
-        app:title="Mi Perfil"
-        app:titleTextColor="#2C3E50"
-            app:titleTextAppearance="@style/TextAppearance.FocusUp.Toolbar" />
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,7 +18,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:paddingTop="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Mi Perfil"
+                android:textColor="#2C3E50"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins" />
 
             <!-- Tarjeta de info principal -->
             <androidx.cardview.widget.CardView
@@ -35,7 +38,9 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
+                android:outlineProvider="background"
+    android:clipToOutline="true"
+    app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -84,7 +89,9 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
+                android:outlineProvider="background"
+    android:clipToOutline="true"
+    app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -207,7 +214,9 @@
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
+                android:outlineProvider="background"
+    android:clipToOutline="true"
+    app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -321,6 +330,8 @@
         app:itemIconTint="@drawable/bottom_nav_color"
         app:itemTextColor="@drawable/bottom_nav_color"
         app:itemActiveIndicatorStyle="@style/NavIndicatorTransparent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="26dp"
         app:menu="@menu/bottom_nav_menu" />
 
 </LinearLayout>

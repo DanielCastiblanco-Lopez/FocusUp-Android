@@ -50,12 +50,7 @@ class PomodoroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pomodoro)
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbarPomodoro)
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbar.setNavigationOnClickListener {
-            NavUtils.goTo(this, DashboardActivity::class.java)
-        }
+
 
         tvTimer = findViewById(R.id.tvTimer)
         tvSessionStatus = findViewById(R.id.tvSessionStatus)

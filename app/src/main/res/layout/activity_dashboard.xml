@@ -172,6 +172,8 @@
         app:itemIconTint="@drawable/bottom_nav_color"
         app:itemTextColor="@drawable/bottom_nav_color"
         app:itemActiveIndicatorStyle="@style/NavIndicatorTransparent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="26dp"
         app:menu="@menu/bottom_nav_menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

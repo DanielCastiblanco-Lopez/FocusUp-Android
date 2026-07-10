@@ -7,16 +7,7 @@
     android:background="#ECF0F1"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarPomodoro"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="#2C3E50"
-        android:paddingTop="6dp"
-        app:navigationIcon="@drawable/ic_back"
-        app:navigationContentDescription="Volver"
-        app:title="Temporizador Pomodoro"
-        app:titleTextColor="#FFFFFF" />
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,6 +20,17 @@
             android:orientation="vertical"
             android:padding="24dp"
             android:gravity="center_horizontal">
+
+            <!-- Titulo integrado en pantalla -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Temporizador"
+                android:textColor="#2C3E50"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins" />
 
             <!-- Etiqueta de estado -->
             <TextView
@@ -76,7 +78,9 @@
                     android:focusable="true"
                     app:cardBackgroundColor="#2C3E50"
                     app:cardCornerRadius="104dp"
-                    app:cardElevation="0dp">
+                    android:outlineProvider="background"
+    android:clipToOutline="true"
+    app:cardElevation="0dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -209,6 +213,8 @@
         app:itemIconTint="@drawable/bottom_nav_color"
         app:itemTextColor="@drawable/bottom_nav_color"
         app:itemActiveIndicatorStyle="@style/NavIndicatorTransparent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="26dp"
         app:menu="@menu/bottom_nav_menu" />
 
 </LinearLayout>

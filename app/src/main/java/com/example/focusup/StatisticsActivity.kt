@@ -23,12 +23,7 @@ class StatisticsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_statistics)
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbarStats)
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbar.setNavigationOnClickListener {
-            NavUtils.goTo(this, DashboardActivity::class.java)
-        }
+
 
         val btnPeriodWeek = findViewById<TextView>(R.id.btnPeriodWeek)
         val btnPeriodMonth = findViewById<TextView>(R.id.btnPeriodMonth)

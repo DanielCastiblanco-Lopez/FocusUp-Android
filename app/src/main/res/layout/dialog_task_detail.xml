@@ -6,6 +6,8 @@
     android:layout_height="wrap_content"
     app:cardBackgroundColor="#FFFFFF"
     app:cardCornerRadius="20dp"
+    android:outlineProvider="background"
+    android:clipToOutline="true"
     app:cardElevation="0dp">
 
     <ScrollView
