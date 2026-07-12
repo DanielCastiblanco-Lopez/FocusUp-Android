@@ -47,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
             return
         }
         if (password.isEmpty()) {
-            etPassword.error = "Ingresa tu contrasena"
+            etPassword.error = "Ingresa tu contraseña"
             etPassword.requestFocus()
             return
         }
@@ -57,7 +57,7 @@ class LoginActivity : AppCompatActivity() {
         if (usuario == null) {
             android.widget.Toast.makeText(
                 this,
-                "Correo o contrasena incorrectos",
+                "Correo o contraseña incorrectos",
                 android.widget.Toast.LENGTH_SHORT
             ).show()
             return
@@ -78,7 +78,7 @@ class LoginActivity : AppCompatActivity() {
         input.setPadding(padding, padding, padding, padding)
 
         android.app.AlertDialog.Builder(this)
-            .setTitle("Recuperar contrasena")
+            .setTitle("Recuperar contraseña")
             .setMessage("Ingresa el correo de tu cuenta para continuar")
             .setView(input)
             .setPositiveButton("Continuar") { _, _ ->
@@ -95,18 +95,18 @@ class LoginActivity : AppCompatActivity() {
 
     private fun mostrarDialogoNuevaContrasena(correo: String) {
         val input = android.widget.EditText(this)
-        input.hint = "Nueva contrasena (minimo 6 caracteres)"
+        input.hint = "Nueva contraseña (mínimo 6 caracteres)"
         input.inputType = android.text.InputType.TYPE_CLASS_TEXT or android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
         val padding = (16 * resources.displayMetrics.density).toInt()
         input.setPadding(padding, padding, padding, padding)
 
         android.app.AlertDialog.Builder(this)
-            .setTitle("Nueva contrasena")
+            .setTitle("Nueva contraseña")
             .setView(input)
             .setPositiveButton("Guardar") { _, _ ->
                 val nuevaPassword = input.text.toString()
                 if (nuevaPassword.length < 6) {
-                    android.widget.Toast.makeText(this, "Minimo 6 caracteres", android.widget.Toast.LENGTH_SHORT).show()
+                    android.widget.Toast.makeText(this, "Mínimo 6 caracteres", android.widget.Toast.LENGTH_SHORT).show()
                     return@setPositiveButton
                 }
                 UserStorage.resetPassword(this, correo, nuevaPassword)

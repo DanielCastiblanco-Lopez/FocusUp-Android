@@ -37,7 +37,8 @@
                 android:id="@+id/tvSessionStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="6dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="4dp"
                 android:background="@drawable/bg_status_chip"
                 android:paddingStart="14dp"
                 android:paddingEnd="14dp"
@@ -47,18 +48,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="28dp"
-                android:text="Sesion de estudio"
-                android:textColor="#2C3E50"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <!-- Anillo de progreso circular con el tiempo en el centro -->
+<!-- Anillo de progreso circular con el tiempo en el centro -->
             <FrameLayout
                 android:layout_width="240dp"
                 android:layout_height="240dp"

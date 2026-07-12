@@ -9,7 +9,6 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
 import com.example.focusup.data.PomodoroStorage
 import com.example.focusup.data.StreakStorage
@@ -24,9 +23,6 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
-        val toolbar = findViewById<Toolbar>(R.id.toolbarHome)
-        setSupportActionBar(toolbar)
 
         val ivProfile = findViewById<android.widget.ImageView>(R.id.ivProfileHome)
         ivProfile.setOnClickListener {
@@ -174,7 +170,7 @@ class HomeActivity : AppCompatActivity() {
         return when {
             dias < 0 -> "Vencida"
             dias == 0 -> "Hoy"
-            dias == 1 -> "Manana"
+            dias == 1 -> "Mañana"
             else -> "en $dias dias"
         }
     }

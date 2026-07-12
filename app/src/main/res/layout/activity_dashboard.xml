@@ -6,43 +6,12 @@
     android:layout_height="match_parent"
     android:background="#ECF0F1">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-        app:elevation="4dp">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:background="#FFFFFF"
-            android:paddingTop="6dp"
-            app:title="FocusUp"
-            app:titleTextColor="#2C3E50"
-            app:titleTextAppearance="@style/TextAppearance.FocusUp.Toolbar">
-
-            <ImageView
-                android:id="@+id/ivProfile"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_gravity="end"
-                android:layout_marginEnd="16dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:contentDescription="Perfil"
-                android:src="@drawable/ic_profile"
-                app:tint="#2C3E50" />
-
-        </androidx.appcompat.widget.Toolbar>
-    </com.google.android.material.appbar.AppBarLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:paddingBottom="64dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -54,14 +23,34 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <!-- Fila: titulo + icono de perfil -->
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="12dp"
-                    android:text="Mis tareas"
-                    android:textColor="#2C3E50"
-                    android:textSize="22sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mis tareas"
+                        android:textColor="#2C3E50"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="Perfil"
+                        android:src="@drawable/ic_profile"
+                        app:tint="#2C3E50" />
+
+                </LinearLayout>
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"

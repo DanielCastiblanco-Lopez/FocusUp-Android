@@ -78,7 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:hint="Contrasena"
+                    android:hint="Contraseña"
                     app:boxStrokeColor="#18BC9C"
                     app:hintTextColor="#2C3E50"
                     app:passwordToggleEnabled="true"
@@ -102,7 +102,7 @@
                     android:layout_marginBottom="24dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:text="Olvidaste tu contrasena?"
+                    android:text="¿Olvidaste tu contraseña?"
                     android:textColor="#18BC9C"
                     android:textSize="13sp" />
 

@@ -157,16 +157,16 @@ class ProfileActivity : AppCompatActivity() {
             val nueva = etNewPassword.text.toString()
 
             if (nueva.length < 6) {
-                Toast.makeText(this, "La nueva contrasena debe tener minimo 6 caracteres", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "La nueva contraseña debe tener mínimo 6 caracteres", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             val exito = UserStorage.changePassword(this, actual, nueva)
             if (exito) {
-                Toast.makeText(this, "Contrasena actualizada", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Contraseña actualizada 🔒", Toast.LENGTH_SHORT).show()
                 dialog.dismiss()
             } else {
-                Toast.makeText(this, "La contrasena actual no es correcta", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "La contraseña actual no es correcta", Toast.LENGTH_SHORT).show()
             }
         }
 

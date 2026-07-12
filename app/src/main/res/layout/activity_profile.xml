@@ -283,7 +283,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:src="@android:drawable/ic_lock_lock"
-                            android:contentDescription="Contrasena"
+                            android:contentDescription="Contraseña"
                             app:tint="#18BC9C" />
 
                         <TextView
@@ -291,7 +291,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_marginStart="16dp"
-                            android:text="Cambiar contrasena"
+                            android:text="Cambiar contraseña"
                             android:textColor="#2C3E50"
                             android:textSize="15sp" />
 
@@ -312,7 +312,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_marginBottom="16dp"
-                android:text="Cerrar sesion"
+                android:text="Cerrar sesión"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:backgroundTint="#E74C3C"

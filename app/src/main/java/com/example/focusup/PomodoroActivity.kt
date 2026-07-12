@@ -318,7 +318,7 @@ class PomodoroActivity : AppCompatActivity() {
                     updateProgressRing()
                     guardarEstadoActual()
                 } else {
-                    android.widget.Toast.makeText(this, "La sesion debe durar al menos 1 minuto", android.widget.Toast.LENGTH_SHORT).show()
+                    android.widget.Toast.makeText(this, "La sesión debe durar al menos 1 minuto", android.widget.Toast.LENGTH_SHORT).show()
                 }
             }
             .setNegativeButton("Cancelar", null)
