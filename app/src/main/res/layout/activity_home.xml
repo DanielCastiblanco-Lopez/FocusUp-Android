@@ -28,7 +28,8 @@
                 app:cardCornerRadius="16dp"
                 android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="4dp">
+    app:cardElevation="0dp"
+        android:elevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -50,7 +51,7 @@
                             android:layout_weight="1"
                             android:text="FocusUp"
                             android:textColor="#18BC9C"
-                            android:textSize="20sp"
+                            android:textSize="18sp"
                             android:textStyle="bold"
                             android:fontFamily="@font/poppins" />
 
@@ -73,7 +74,7 @@
                         android:layout_height="wrap_content"
                         android:text="Hola, Daniel"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -114,7 +115,7 @@
                             android:layout_marginStart="8dp"
                             android:text="5"
                             android:textColor="#18BC9C"
-                            android:textSize="20sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -140,7 +141,8 @@
                 app:cardCornerRadius="16dp"
                 android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="4dp">
+    app:cardElevation="0dp"
+        android:elevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -174,7 +176,7 @@
                 android:layout_marginBottom="10dp"
                 android:text="Resumen de hoy"
                 android:textColor="#2C3E50"
-                android:textSize="17sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -192,7 +194,8 @@
                     app:cardCornerRadius="16dp"
                     android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -207,7 +210,7 @@
                             android:layout_height="wrap_content"
                             android:text="4"
                             android:textColor="#F39C12"
-                            android:textSize="26sp"
+                            android:textSize="22sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -228,7 +231,8 @@
                     app:cardCornerRadius="16dp"
                     android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -243,7 +247,7 @@
                             android:layout_height="wrap_content"
                             android:text="50"
                             android:textColor="#18BC9C"
-                            android:textSize="26sp"
+                            android:textSize="22sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -267,7 +271,8 @@
                 app:cardCornerRadius="16dp"
                 android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -312,7 +317,7 @@
                             android:layout_marginTop="2dp"
                             android:text="Sin tareas pendientes"
                             android:textColor="#7F8C8D"
-                            android:textSize="12sp"
+                            android:textSize="11sp"
                             android:visibility="gone" />
                     </LinearLayout>
 
@@ -326,7 +331,7 @@
                 android:layout_marginBottom="10dp"
                 android:text="Accesos rapidos"
                 android:textColor="#2C3E50"
-                android:textSize="17sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -346,7 +351,8 @@
                     app:cardCornerRadius="16dp"
                     android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -385,7 +391,8 @@
                     app:cardCornerRadius="16dp"
                     android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"

@@ -28,7 +28,7 @@
                 android:layout_marginBottom="4dp"
                 android:text="Temporizador"
                 android:textColor="#2C3E50"
-                android:textSize="26sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins" />
 
@@ -46,7 +46,7 @@
                 android:paddingBottom="6dp"
                 android:text="Listo para empezar"
                 android:textColor="#FFFFFF"
-                android:textSize="12sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
 <!-- Anillo de progreso circular con el tiempo en el centro -->
             <FrameLayout
@@ -70,7 +70,8 @@
                     app:cardCornerRadius="104dp"
                     android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="0dp">
+    app:cardElevation="0dp"
+        android:elevation="0dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -119,7 +120,7 @@
                 android:layout_height="56dp"
                 android:layout_marginBottom="12dp"
                 android:text="Iniciar sesion"
-                android:textSize="16sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 app:backgroundTint="#18BC9C"
                 app:cornerRadius="14dp"
@@ -171,7 +172,7 @@
                 android:layout_marginBottom="12dp"
                 android:text="Ultimas sesiones"
                 android:textColor="#2C3E50"
-                android:textSize="17sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <!-- Contenedor dinamico de sesiones recientes -->

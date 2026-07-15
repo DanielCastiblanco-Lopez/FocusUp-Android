@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="Titulo de la tarea"
             android:textColor="#2C3E50"
-            android:textSize="14sp"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <TextView

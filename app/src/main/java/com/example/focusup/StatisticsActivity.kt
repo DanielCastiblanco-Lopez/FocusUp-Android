@@ -97,9 +97,9 @@ class StatisticsActivity : AppCompatActivity() {
     private fun cargarEstadisticas() {
         val tvPeriodTitle = findViewById<TextView>(R.id.tvPeriodTitle)
         tvPeriodTitle.text = when (periodoActual) {
-            PomodoroStorage.Period.WEEK -> "Tu progreso esta semana"
-            PomodoroStorage.Period.MONTH -> "Tu progreso este mes"
-            PomodoroStorage.Period.ALL -> "Tu progreso total"
+            PomodoroStorage.Period.WEEK -> "Tu progreso • Semana"
+            PomodoroStorage.Period.MONTH -> "Tu progreso • Mes"
+            PomodoroStorage.Period.ALL -> "Tu progreso • Total"
         }
 
         val tareasCompletadas = TaskStorage.getCompletedCountForPeriod(this, periodoActual)

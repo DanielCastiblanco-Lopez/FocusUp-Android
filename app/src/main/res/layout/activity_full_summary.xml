@@ -35,7 +35,7 @@
                 android:layout_marginBottom="4dp"
                 android:text="Tu historia en FocusUp"
                 android:textColor="#2C3E50"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -56,7 +56,8 @@
                 app:cardCornerRadius="16dp"
                 android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="4dp">
+    app:cardElevation="0dp"
+        android:elevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -100,7 +101,8 @@
                     app:cardCornerRadius="16dp"
                     android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -115,7 +117,7 @@
                             android:layout_height="wrap_content"
                             android:text="0"
                             android:textColor="#18BC9C"
-                            android:textSize="24sp"
+                            android:textSize="22sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -136,7 +138,8 @@
                     app:cardCornerRadius="16dp"
                     android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -151,7 +154,7 @@
                             android:layout_height="wrap_content"
                             android:text="0"
                             android:textColor="#2C3E50"
-                            android:textSize="24sp"
+                            android:textSize="22sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -181,7 +184,8 @@
                     app:cardCornerRadius="16dp"
                     android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -196,7 +200,7 @@
                             android:layout_height="wrap_content"
                             android:text="0"
                             android:textColor="#E74C3C"
-                            android:textSize="24sp"
+                            android:textSize="22sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -217,7 +221,8 @@
                     app:cardCornerRadius="16dp"
                     android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -232,7 +237,7 @@
                             android:layout_height="wrap_content"
                             android:text="0"
                             android:textColor="#18BC9C"
-                            android:textSize="24sp"
+                            android:textSize="22sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -256,7 +261,8 @@
                 app:cardCornerRadius="16dp"
                 android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="3dp">
+    app:cardElevation="0dp"
+        android:elevation="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -277,7 +283,7 @@
                             android:layout_weight="1"
                             android:text="Promedio diario"
                             android:textColor="#2C3E50"
-                            android:textSize="14sp" />
+                            android:textSize="13sp" />
 
                         <TextView
                             android:id="@+id/tvAverageDaily"
@@ -285,7 +291,7 @@
                             android:layout_height="wrap_content"
                             android:text="0 min"
                             android:textColor="#18BC9C"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -309,7 +315,7 @@
                             android:layout_weight="1"
                             android:text="Semana mas productiva"
                             android:textColor="#2C3E50"
-                            android:textSize="14sp" />
+                            android:textSize="13sp" />
 
                         <TextView
                             android:id="@+id/tvBestWeek"
@@ -317,7 +323,7 @@
                             android:layout_height="wrap_content"
                             android:text="0 min"
                             android:textColor="#18BC9C"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -341,7 +347,7 @@
                             android:layout_weight="1"
                             android:text="Record en un dia"
                             android:textColor="#2C3E50"
-                            android:textSize="14sp" />
+                            android:textSize="13sp" />
 
                         <TextView
                             android:id="@+id/tvRecordDay"
@@ -349,7 +355,7 @@
                             android:layout_height="wrap_content"
                             android:text="0 min"
                             android:textColor="#18BC9C"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 

@@ -27,7 +27,7 @@
                 android:layout_marginBottom="12dp"
                 android:text="Estadísticas"
                 android:textColor="#2C3E50"
-                android:textSize="26sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins" />
 
@@ -51,7 +51,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:gravity="center"
-                    android:text="Esta semana"
+                    android:text="Semana"
                     android:textColor="#FFFFFF"
                     android:textSize="11sp"
                     android:textStyle="bold" />
@@ -64,7 +64,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:gravity="center"
-                    android:text="Este mes"
+                    android:text="Mes"
                     android:textColor="#7F8C8D"
                     android:textSize="11sp"
                     android:textStyle="bold" />
@@ -91,7 +91,7 @@
                 android:layout_marginBottom="16dp"
                 android:text="Tu progreso esta semana"
                 android:textColor="#2C3E50"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <!-- 3 tarjetas resumen -->
@@ -115,7 +115,8 @@
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="#FFFFFF"
                         app:cardCornerRadius="16dp"
-                        app:cardElevation="0dp">
+                        app:cardElevation="0dp"
+        android:elevation="0dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -141,7 +142,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="0"
                                 android:textColor="#18BC9C"
-                                android:textSize="20sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -170,7 +171,8 @@
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="#FFFFFF"
                         app:cardCornerRadius="16dp"
-                        app:cardElevation="0dp">
+                        app:cardElevation="0dp"
+        android:elevation="0dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -196,7 +198,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="0"
                                 android:textColor="#2C3E50"
-                                android:textSize="20sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -224,7 +226,8 @@
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="#FFFFFF"
                         app:cardCornerRadius="16dp"
-                        app:cardElevation="0dp">
+                        app:cardElevation="0dp"
+        android:elevation="0dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -250,7 +253,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="0"
                                 android:textColor="#18BC9C"
-                                android:textSize="20sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -277,7 +280,8 @@
                 app:cardCornerRadius="16dp"
                 android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="4dp">
+    app:cardElevation="0dp"
+        android:elevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -325,7 +329,8 @@
                 app:cardCornerRadius="16dp"
                 android:outlineProvider="background"
     android:clipToOutline="true"
-    app:cardElevation="4dp">
+    app:cardElevation="0dp"
+        android:elevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -361,7 +366,7 @@
                             android:layout_height="wrap_content"
                             android:text="Racha maxima, record diario y mas"
                             android:textColor="#A6B1B9"
-                            android:textSize="12sp" />
+                            android:textSize="11sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -381,7 +386,7 @@
                 android:layout_marginBottom="12dp"
                 android:text="Ultimas sesiones"
                 android:textColor="#2C3E50"
-                android:textSize="17sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <LinearLayout

@@ -37,7 +37,7 @@
                         android:layout_weight="1"
                         android:text="Mis tareas"
                         android:textColor="#2C3E50"
-                        android:textSize="26sp"
+                        android:textSize="22sp"
                         android:textStyle="bold" />
 
                     <ImageView
@@ -126,7 +126,7 @@
                         android:gravity="center"
                         android:text="No tienes tareas pendientes"
                         android:textColor="#7F8C8D"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                 </LinearLayout>
 
